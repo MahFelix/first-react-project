@@ -1,13 +1,16 @@
 import React, { useState,useRef,} from 'react';
 import axios from 'axios';
+
+
+import People from '../../Assets/social.svg'
+import Arrow from '../../Assets/Arrow.svg'
+
 import {Container,
   Image,
   ContainerItens,
   H1 , InputLabel,
   Input, Button,
 } from "./styles";
-import People from '../../Assets/social.svg'
-import Arrow from '../../Assets/Arrow.svg'
 
 
 
@@ -51,7 +54,7 @@ function App() {
             <InputLabel> Idade </InputLabel>
           <Input ref={inputAge} placeholder='Idade'/>
 
-          <Button onClick={addNewUser}>
+          <Button to="./usuarios" onClick={addNewUser}>
             Cadastrar <img alt="seta" src={Arrow} />
             </Button>
 

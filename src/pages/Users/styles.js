@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import Background from '../../Assets/background.svg';
+import Background from '../../Assets/background1.svg';
+import { Link } from 'react-router-dom'
 
 
 export const Container = styled.div`
@@ -33,6 +34,8 @@ border-radius: 61px 61px 0px 0px;
 
 flex-direction:column;
 
+backdrop-filter: blur(45px);
+
 `;
 
 
@@ -49,57 +52,25 @@ color: white;
 `;
 
 
-export const InputLabel = styled.p`
-letter-spacing: -0.408px;
-color: #EEEEEE;
-color: white;
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 22px;
-`;
-
-export const Input = styled.input`
-
-width: 342px;
-height: 58px;
-padding-left: 25px;
-
-background: rgba(255, 255, 255, 0.25);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 14px;
-
-margin-bottom: 36px;
-border: none;
-border-radius: 10px;
-outline: none;
-
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 28px;
-
-color: #FFFFFF;
-
-
-`;
-
-export const Button = styled.button`
+export const Button = styled(Link)`
 width: 342px;
 height: 74px;
-background: rgba(0, 0, 0, 0.8);
+background: transparent;
 border-radius: 14px;
 
-margin-top: 10px;
+
+margin-top: 120px;
 padding-left: 14x;
 
-border: none;
+border: 1px solid #ffff;
 
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
 font-size: 17px;
 line-height: 28px;
+
+
 /* identical to box height, or 165% */
 
 display: flex;
@@ -118,6 +89,12 @@ cursor: pointer;
 &:active{
   opacity: 0.5;
 }
+
+img{
+  transform: rotateY(180deg);
+  margin-right: 10px;
+}
+
 `;
 
 
