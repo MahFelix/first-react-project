@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import {useHistory} from 'react-router'
+
 import {Container,
   Image,
-  ContainerItens,
-  H1 ,
-  Button,
   User} from "./styles";
+
+import H1 from "../../components/Title"
+import ContainerItens from "../../components/ContainerItens"
+import Button from "../../components/Button"
+
+
 import Avatar from '../../Assets/Avatar.svg'
 import Arrow from '../../Assets/Arrow.svg'
 import lixeira from '../../Assets/lixeira.svg'
@@ -14,6 +19,7 @@ import lixeira from '../../Assets/lixeira.svg'
 
 function Users() {
    const [ users,setUsers] = useState([]);
+   const history = useHistory()
 
 
  async function addNewUser(){
@@ -53,10 +59,15 @@ async function deleteUser(userId) {
 }
 
 
+function goBackPage(){
+    history.push('/')
+
+}
+
   return (
       <Container>
         <Image alt='Logo-Imagem ' src={Avatar} />
-        <ContainerItens>
+        <ContainerItens isBlur={true} >
           <H1>Usuários</H1>
 
 
@@ -72,7 +83,7 @@ async function deleteUser(userId) {
           </ul>
 
 
-            <Button to='/'>
+            <Button isBack={true} onClick={goBackPage}>
              <img alt="seta" src={Arrow} /> Voltar
 
             </Button>

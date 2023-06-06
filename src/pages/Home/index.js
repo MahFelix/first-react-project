@@ -1,24 +1,28 @@
 import React, { useState,useRef,} from 'react';
 import axios from 'axios';
-
+import { useHistory } from 'react-router';
 
 import People from '../../Assets/social.svg'
 import Arrow from '../../Assets/Arrow.svg'
 
+import H1 from '../../components/Title';
+import ContainerItens from '../../components/ContainerItens';
+import Button from '../../components/Button'
+
 import {Container,
   Image,
-  ContainerItens,
-  H1 , InputLabel,
-  Input, Button,
+  InputLabel,
+  Input,
 } from "./styles";
-
 
 
 
 function App() {
    const [ users,setUsers] = useState([]);
+  const history = useHistory()
   const inputName = useRef()
   const inputAge = useRef()
+
 
 
  async function addNewUser(){
@@ -37,6 +41,7 @@ function App() {
   ]);
 
 
+  history.push('/usuarios')
 
 }
 
@@ -54,8 +59,7 @@ function App() {
             <InputLabel> Idade </InputLabel>
           <Input ref={inputAge} placeholder='Idade'/>
 
-          <Button to="./usuarios" onClick={addNewUser}>
-            Cadastrar <img alt="seta" src={Arrow} />
+          <Button onClick={addNewUser}> Cadastrar <img alt="seta" src={Arrow} />
             </Button>
 
 
