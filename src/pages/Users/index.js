@@ -25,7 +25,7 @@ function Mail() {
  // eslint-disable-next-line no-unused-vars
  async function addNewUser(){
 
-  const response  = await axios.post("http://localhost:3000/users", {
+  const response  = await axios.post("https://nodeproject-n7l9.vercel.app/users", {
 
 
 
@@ -43,7 +43,7 @@ function Mail() {
 
 useEffect(() => {
   async function fecthUsers (){
- const {data: newUsers } = await axios.get("http://localhost:3000/users")
+ const {data: newUsers } = await axios.get("https://nodeproject-n7l9.vercel.app/users")
 
 setUsers(newUsers)
 }
@@ -52,7 +52,7 @@ fecthUsers()
 }, [users])
 
 async function deleteUser(userId) {
- await axios.delete(`http://localhost:3000/users/${userId}`)
+ await axios.delete(`https://nodeproject-n7l9.vercel.app/users/${userId}`)
 
   const newUsers = users.filter(user => user.id !== userId)
   setUsers(newUsers)

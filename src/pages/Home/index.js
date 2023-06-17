@@ -27,7 +27,7 @@ function App() {
 
  async function addNewUser(){
 
-  const response  = await axios.post("http://localhost:3000/users", {
+  const response  = await axios.post("https://nodeproject-n7l9.vercel.app/users", {
     name:inputName.current.value,
     age:inputAge.current.value,
 
