@@ -80,7 +80,7 @@ function goBackPage(){
               <button onClick={() => deleteUser(user.id)} ><img src={lixeira} alt="lata-de-lixo"></img></button>
               </User>
 
-            ))};
+            ))}
          </ul>
 
             <Button isBack={true} onClick={goBackPage}>
