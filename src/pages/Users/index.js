@@ -17,14 +17,15 @@ import lixeira from '../../Assets/lixeira.svg'
 
 
 
-function Users() {
-   const [ users,setUsers] = useState([]);
+function Mail() {
+   const [users,setUsers] = useState([]);
    const history = useHistory()
 
 
+ // eslint-disable-next-line no-unused-vars
  async function addNewUser(){
 
-  const response  = await axios.post("http://localhost:3001/users", {
+  const response  = await axios.post("http://localhost:3000/users", {
 
 
 
@@ -42,7 +43,7 @@ function Users() {
 
 useEffect(() => {
   async function fecthUsers (){
- const {data: newUsers } = await axios.get("http://localhost:3001/users")
+ const {data: newUsers } = await axios.get("http://localhost:3000/users")
 
 setUsers(newUsers)
 }
@@ -51,7 +52,7 @@ fecthUsers()
 }, [users])
 
 async function deleteUser(userId) {
- await axios.delete(`http://localhost:3001/users/${userId}`)
+ await axios.delete(`http://localhost:3000/users/${userId}`)
 
   const newUsers = users.filter(user => user.id !== userId)
   setUsers(newUsers)
@@ -72,16 +73,15 @@ function goBackPage(){
 
 
           <ul>
-            {users.map(user => (
+            { users.map(user =>(
               <User key={user.id}>
-
-              <p> {user.name}</p><p>{user.age}</p>
+              <p>{user.name}</p>
+              <p>{user.age}</p>
               <button onClick={() => deleteUser(user.id)} ><img src={lixeira} alt="lata-de-lixo"></img></button>
-
               </User>
-            ))}
-          </ul>
 
+            ))};
+         </ul>
 
             <Button isBack={true} onClick={goBackPage}>
              <img alt="seta" src={Arrow} /> Voltar
@@ -95,4 +95,4 @@ function goBackPage(){
 };
 
 
-export default Users;
+export default Mail;
