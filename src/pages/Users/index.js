@@ -22,24 +22,8 @@ function Mail() {
    const history = useHistory()
 
 
- // eslint-disable-next-line no-unused-vars
- async function addNewUser(){
-
-  const response  = await axios.post("https://nodeproject-n7l9.vercel.app/users", {
 
 
-
-  });
-
-  console.log(response.data)
-
- setUsers([
-  ...users, response.data
-  ]);
-
-
-
-}
 
 useEffect(() => {
   async function fecthUsers (){
