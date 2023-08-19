@@ -17,3 +17,7 @@ além de reforçar conhecimentos aprendidos durante a linha de estudos do curso.
 - <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
 - <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"/>
 - <img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white"/>
+
+<h1> Apresentação do projeto </h1>
+<br>
+https://github.com/MahFelix/PORTF-LIO-OFICIAL/assets/118228591/90162185-67d4-4870-b6dc-2d6a93c825ec
