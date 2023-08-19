@@ -20,4 +20,4 @@ além de reforçar conhecimentos aprendidos durante a linha de estudos do curso.
 
 <h1> Apresentação do projeto </h1>
 <br>
-![readmee](https://github.com/MahFelix/PORTF-LIO-OFICIAL/assets/118228591/ddebccaf-d6ea-4cd8-b0e8-4101acc79ebc)
+<img src="https://github.com/MahFelix/PORTF-LIO-OFICIAL/assets/118228591/ddebccaf-d6ea-4cd8-b0e8-4101acc79ebc" />
