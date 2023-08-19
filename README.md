@@ -7,7 +7,7 @@
 também componentizei  aplicação criando uma pasta de componentes na pasta 'src' para reutilização dos códigos em novas páginas, os usuários são representados dentro de um card que contém as informações com seu nome e idade e junto
 foi adicionado um botão de exclusão que clicando irá imediatamente deletar o usuário da lista e o estado será atualizado.
 <br>
-<h1> Conhecimento adquirido </h1>
+<h1> Conhecimentos adquiridos </h1>
 <h2> Fazer esse projeto foi incrível, apesar de ser um projeto simples eu aprendi bastante coisas novas; como comunicar o servidor do back-end ao front-end e utilizar o React Router DOM para navegar entre as páginas desenvolvidas na aplicação,
 além de reforçar conhecimentos aprendidos durante a linha de estudos do curso.</h2>
 <a href="https://first-react-project-8szo.vercel.app/">Link do Projeto<a/></h2>  💻
